@@ -61,14 +61,35 @@
         </section>
     </div> 
 
-    <section id="section4">
-      <h2>Quiz</h2>
-      <div id="quiz-container">
-      </div>
-
-      <button id="submit-button" onclick="submitQuiz()">Enviar Respostas</button>
-    </section>
-
+    <div class="quiz" id="section4">
+        <h2>Quiz</h2>
+        <div id="quiz-container">
+            <div class="question" id="question1">
+              <p>1. Com quantos anos Katherine ingressou na universidade?</p>
+              <input type="radio" name="q1" value="23"> 23<br>
+              <input type="radio" name="q1" value="15"> 15<br>
+              <input type="radio" name="q1" value="16"> 16<br>
+            </div>
+        
+            <div class="question" id="question2">
+              <p>2. Qual era sua função na NASA?</p>
+              <input type="radio" name="q2" value="Controle espacial"> Controle espacial<br>
+              <input type="radio" name="q2" value="Desenvolveu artigos"> Desenvolveu artigos<br>
+              <input type="radio" name="q2" value="Manipulação de dados"> Manipulação de dados<br>
+            </div>
+        
+            <div class="question" id="question3">
+              <p>3. Qual foi o papel de Katherine Johnson na Missão Apollo 11?</p>
+              <input type="radio" name="q3" value="Analisou desempenho"> Analisou desempenho<br>
+              <input type="radio" name="q3" value="Executou cálculos precisos"> Executou cálculos precisos<br>
+              <input type="radio" name="q3" value="Desenvolveu supercomputador"> Desenvolveu supercomputador<br>
+            </div>
+        
+            <button onclick="checkAnswers()">Enviar</button>
+        
+            <div id="results" class="results"></div>
+          </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
